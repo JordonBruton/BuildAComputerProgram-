@@ -1,0 +1,31 @@
+Project Goal: I'm going to make a program in which given certain factors and criteria it will give you all of the parts it reccomends in order to build a pc
+	- As of right now I'm just going to do counsel app, but depending on how it goes I could possibly implement it into unity
+	- Reason behind picking this topic is because I'm in the proccess of building one, and I find myself to have the most joy coding when seeing how it can really be applied 
+
+Factors that affect the build:
+	- Budget
+		- Size of tower (mirco/mid/ETAX) 
+	- Plan for what you want to do with this computer 
+	
+
+How will I organize information:
+	- Vectors to store different hardware 
+	- Hashtables - Can categoize each part and put them under a certain name in order to access that part 
+	- Binary Search Tree(BST) - Could make options a lot simpler but cutting hardward options based off of price 
+
+Other Things I can add:
+	- accesories 
+		- Headphones 
+		- Mouses 
+		- Keyboards
+
+Parts You Need To Build a Computer:
+	- CPU (Proccesor)
+	- GPU (Graphics Card)
+	- Power Supply
+	- RAM (Memeory)
+	- Tower (deskstop case)
+	- MotherBoard
+	- SSD (opitonal(faster))
+	- Hard drive(???)
+	- More fans (optioanl(not required)) 

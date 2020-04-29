@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <iostream>
-#include "PreExistingBuilds.h"
+#include <cmath>
 using namespace std;
 
 // 4/28/2020
@@ -12,13 +12,36 @@ using namespace std;
 		// Creating data strucutres for:
 			// CPU & GPU
 
+class PreExistingBuilds
+{
+public:
+
+	// Low Tier pre-existing build
+	void CheapestBuild()
+	{
+		cout << "cheap" << endl;
+	}
+	// Mid tier pre-existing build
+	void MidTierBuild()
+	{
+		cout << "mid" << endl;
+	}
+	// High tier pre-existing build 
+	void HighTierBuild()
+	{
+		cout << "High" << endl;
+	}
+
+};
+
+
 int main()
 {
 	// Local variables 
 	string option;
 	string pre_existing = "p";
 	string create_new = "c";
-	int amount_on_pc = 0;
+	string answer;
 
 	cout << "Welcome to the PC Creation Program!" << endl;
 	cout << endl;
@@ -27,29 +50,45 @@ int main()
 	cout << " Enter c to create your own PC" << endl;
 	cin >> option;
 
-	if (option == pre_existing)
-	{
-		cout << "How much do you want to spend on your computer" << endl;
-		cin >> amount_on_pc;
-
-		if (amount_on_pc <= 500)
-		{
-				
-		}
-		else if (amount_on_pc <= 1000)
-		{
-
-		}
-		else
-		{
-
-		}
-		
-	}
-	else if (option == create_new)
+	while (option == "p" || "c")
 	{
 
+		if (option == pre_existing)
+		{
+			cout << "Indicate what tier of computer, 1 being the cheapest and 3 being the most expensive and best quality" << endl;
+			cout << "Enter '1' for tier 1" << endl;
+			cout << "Enter '2' for tier 2" << endl;
+			cout << "Enter '3' for tier 3" << endl;
+			cin >> answer;
+
+			if (answer == "1")
+			{
+				PreExistingBuilds cheap;
+				cheap.CheapestBuild();
+				cout << "If your happy with your results enter exit" << endl;
+				cout << "If you want to change your tier for a pre-existing build enter p" << endl;
+				cout << "If you want to create your own PC enter c" << endl;
+				cin >> option;
+				if (option == "exit")
+				{
+					return 0;
+				}
+			}
+			else if (answer == "2")
+			{
+				PreExistingBuilds mid;
+				mid.MidTierBuild();
+			}
+			else if (answer == "3")
+			{
+				PreExistingBuilds high;
+				high.HighTierBuild();
+			}
+
+		}
 	}
+	
+	
 	
 	
 

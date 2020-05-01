@@ -4,6 +4,7 @@
 #include <vector>
 #include <unordered_map>
 #include "PreExistingBuild.h"
+#include "Processors.h"
 
 using namespace std;
 
@@ -30,7 +31,7 @@ int main()
 	string pre_existing = "p";
 	string create_new = "c";
 	string answer;
-	int budget = 0;
+	
 
 	cout << "Welcome to the PC Creation Program!" << endl;
 	cout << endl;
@@ -93,9 +94,21 @@ int main()
 		}
 		else
 		{
+			Processors processor;
 			cout << "Enter your budget to build your pc" << endl;
-			cin >> budget;
-			cout << "You're budget is: " << budget << endl;
+			cin >> processor.budget;
+			cout << "You're budget is: " << processor.budget<< endl;
+			cout << "Lets start your build!" << endl;
+			
+			processor.PickingOutProcessor();
+
+			cout << "Here are the parts you have so far: " << endl;
+			for (int i = 0; i < processor.final_pc.size(); i++)
+			{
+				cout << processor.final_pc[i] << endl;
+			}
+
+			cout << "Now that you got your processor, Lets pick out your GPU!" << endl;
 
 		}
 	}

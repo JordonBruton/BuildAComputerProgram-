@@ -125,9 +125,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PreExistingBuild.cpp" />
+    <ClCompile Include="Processors.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PreExistingBuild.h" />
+    <ClInclude Include="Processors.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

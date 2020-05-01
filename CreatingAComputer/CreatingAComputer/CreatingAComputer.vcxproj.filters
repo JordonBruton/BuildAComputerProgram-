@@ -21,9 +21,15 @@
     <ClCompile Include="PreExistingBuild.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Processors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PreExistingBuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -123,11 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GraphicsCards.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PreExistingBuild.cpp" />
     <ClCompile Include="Processors.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GraphicsCards.h" />
+    <ClInclude Include="LocalVariables.h" />
     <ClInclude Include="PreExistingBuild.h" />
     <ClInclude Include="Processors.h" />
   </ItemGroup>

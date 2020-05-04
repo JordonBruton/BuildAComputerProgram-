@@ -1,12 +1,14 @@
 #include "Processors.h"
 #include <unordered_map>
 #include <iostream>
+#include "LocalVariables.h"
 using namespace std;
 
 void Processors::PickingOutProcessor()
 {
 	unordered_map<double, string> amd_processor{};
 	unordered_map<double, string> intel_processor{};
+	LocalVariables local;
 
 	amd_processor = {
 		{432.41, "AMD Ryzen 9 3900x"},
@@ -26,10 +28,10 @@ void Processors::PickingOutProcessor()
 		{69.99, "Intel Pentium G5400"}
 	};
 
-	cout << "Step 1: Pick out a processor brand: Intel, AMD" << endl;
-	cin >> processor_brand;
-
-	if (processor_brand != "AMD" || "amd")
+	cout << "Pick out a processor brand: Intel, AMD" << endl;
+	cin >> local.processor_brand;
+	
+	if (local.processor_brand == "AMD" || "amd")
 	{
 		cout << "Here are AMD options : " << endl;
 
@@ -38,24 +40,23 @@ void Processors::PickingOutProcessor()
 			cout << "$" << elm.first << " " << elm.second << endl;
 		}
 
-		cout << "What proccesor do you want?" << endl;
-		cout << "	Enter the amount of the desired processor" << endl;
-		cin >> desired_processor;
+		cout << "Enter the amount of the desired processor" << endl;
+		cin >> local.desired_processor;
 		for (auto& elm : amd_processor)
 		{
-			if (elm.first == desired_processor)
+			if (elm.first == local.desired_processor)
 			{
 				cout << "The processor you pick out is: " << elm.second << endl;
 
-				final_pc.push_back(elm.second);
+				local.final_pc.push_back(elm.second);
 			}
 		}
 
-		new_budget = budget - desired_processor;
-		cout << "Here is your new budget:  " << new_budget;
+		local.new_budget = local.budget - local.desired_processor;
+		cout << "Here is your new budget:  " << local.new_budget << endl;
 
 	}
-	else if (processor_brand != "Intel" || "intel")
+	else if (local.processor_brand == "Intel" || "intel")
 	{
 		cout << "Here are your Intel options: " << endl;
 
@@ -66,19 +67,19 @@ void Processors::PickingOutProcessor()
 
 		cout << "What proccesor do you want?" << endl;
 		cout << "	Enter the amount of the desired processor" << endl;
-		cin >> desired_processor;
+		cin >> local.desired_processor;
 		for (auto& elm : intel_processor)
 		{
-			if (elm.first == desired_processor)
+			if (elm.first == local.desired_processor)
 			{
 				cout << "The processor you pick out is: " << elm.second << endl;
 
-				final_pc.push_back(elm.second);
+				local.final_pc.push_back(elm.second);
 			}
 		}
 
-		new_budget = budget - desired_processor;
-		cout << "Here is your new budget:  " << new_budget << endl;
+		local.new_budget = local.budget - local.desired_processor;
+		cout << "Here is your new budget:  " << local.new_budget << endl;
 	}
 	else
 	{

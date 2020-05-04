@@ -1,4 +1,4 @@
-﻿  Processors.cpp
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\Processors.cpp(54,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\Processors.cpp(80,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+﻿  main.cpp
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(122,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(133,22): warning C4018: '<': signed/unsigned mismatch
   CreatingAComputer.vcxproj -> C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\Debug\CreatingAComputer.exe

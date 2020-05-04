@@ -5,8 +5,8 @@
 #include <unordered_map>
 #include "PreExistingBuild.h"
 #include "Processors.h"
-
-using namespace std;
+#include "GraphicsCards.h"
+#include "LocalVariables.h"
 
 // 4/28/2020 - 4/29/2020
 	// To Do List:
@@ -14,15 +14,35 @@ using namespace std;
 			// Already existing build DONE
 			// Create your own pc DONE
 		// Create basic builds with different price ranges DONE
+
 // 4/30/20
 	// To Do List:
-		// Organize Classes into seperate file to make code cleaner 
+		// Organize Classes into seperate file to make code cleaner DONE
 		// Creating data strucutres for:
-			// CPU & GPU
+			// CPU DONE
 // remember case:
 	// can't have two of the smae prices
 // Binary search tree(???)
 
+// 5/4/2020 
+	// To Do List:
+		// Create GPU & Power supply options 
+	// Issues: 
+		// Can't figure out how to make local variable extend its data to other parts of the program
+		// Why my some of my conditonal statements not being considered
+
+// 5/5/2020
+	// To Do List:	
+		// RAM & Tower 
+
+// 5/6/2020
+	// To Do List:
+		// Mother Board & SSD
+
+// 5/7/2020
+	// To Do List:
+		// Hard Drive (If I have time)
+		
 
 int main()
 {
@@ -31,6 +51,9 @@ int main()
 	string pre_existing = "p";
 	string create_new = "c";
 	string answer;
+	LocalVariables local;
+	GraphicsCards gpu;
+	Processors processor;
 	
 
 	cout << "Welcome to the PC Creation Program!" << endl;
@@ -94,30 +117,34 @@ int main()
 		}
 		else
 		{
-			Processors processor;
+			
 			cout << "Enter your budget to build your pc" << endl;
-			cin >> processor.budget;
-			cout << "You're budget is: " << processor.budget<< endl;
+			cin >> local.budget;
+			cout << "You're budget is: " << local.budget<< endl;
 			cout << "Lets start your build!" << endl;
 			
 			processor.PickingOutProcessor();
 
 			cout << "Here are the parts you have so far: " << endl;
-			for (int i = 0; i < processor.final_pc.size(); i++)
+			for (int i = 0; i < local.final_pc.size(); i++)
 			{
-				cout << processor.final_pc[i] << endl;
+				cout << local.final_pc[i] << endl;
 			}
 
 			cout << "Now that you got your processor, Lets pick out your GPU!" << endl;
-
+			
+			gpu.findingGPU();
+			
+			cout << "Here are the parts you have so far: " << endl;
+			
+			for (int i = 0; i < local.final_pc.size() ; i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
+			
 		}
 	}
 	
-	
-	
-	
-
-
 
 	return EXIT_SUCCESS;
 }

@@ -8,6 +8,8 @@
 #include "GraphicsCards.h"
 #include "LocalVariables.h"
 
+using namespace std;
+
 // 4/28/2020 - 4/29/2020
 	// To Do List:
 		// Prompting users what their options are DONE
@@ -51,9 +53,9 @@ int main()
 	string pre_existing = "p";
 	string create_new = "c";
 	string answer;
-	LocalVariables local;
 	GraphicsCards gpu;
 	Processors processor;
+	LocalVariables local;
 	
 
 	cout << "Welcome to the PC Creation Program!" << endl;
@@ -63,7 +65,7 @@ int main()
 	cout << " Enter c to create your own PC" << endl;
 	cin >> option;
 
-	while (option == "p" || "c")
+	while (option == "p" || option == "c")
 	{
 
 		if (option == pre_existing)
@@ -120,7 +122,9 @@ int main()
 			
 			cout << "Enter your budget to build your pc" << endl;
 			cin >> local.budget;
-			cout << "You're budget is: " << local.budget<< endl;
+			local.setBudget(local.budget);
+			cout << "You're budget is: " << local.getBudget() << endl;
+			
 			cout << "Lets start your build!" << endl;
 			
 			processor.PickingOutProcessor();

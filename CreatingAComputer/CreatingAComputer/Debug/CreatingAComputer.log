@@ -1,4 +1,2 @@
-﻿  main.cpp
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(122,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(133,22): warning C4018: '<': signed/unsigned mismatch
+﻿  GraphicsCards.cpp
   CreatingAComputer.vcxproj -> C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\Debug\CreatingAComputer.exe

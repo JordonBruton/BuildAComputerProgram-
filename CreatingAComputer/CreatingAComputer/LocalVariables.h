@@ -5,6 +5,7 @@ using namespace std;
 
 class LocalVariables
 {
+
 public:
 	string desired_gpu_brand;
 	double desired_gpu = 0.0;
@@ -13,4 +14,22 @@ public:
 	double new_budget = 0.0;
 	double budget = 0.0;
 	vector<string> final_pc{};
+
+public:
+	void setBudget(double x)
+	{
+		budget = x;
+	}
+	double& getBudget()
+	{
+		return budget;
+	}
+	void setNewBudget(double x, double y)
+	{
+		new_budget = x - y;
+	}
+	double& getNewBudget()
+	{
+		return new_budget;
+	}
 };

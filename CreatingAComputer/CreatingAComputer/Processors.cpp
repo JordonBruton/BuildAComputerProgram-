@@ -31,7 +31,8 @@ void Processors::PickingOutProcessor()
 	cout << "Pick out a processor brand: Intel, AMD" << endl;
 	cin >> local.processor_brand;
 	
-	if (local.processor_brand == "AMD" || "amd")
+	if (local.processor_brand == "AMD" || local.processor_brand == "amd")
+		//extend 
 	{
 		cout << "Here are AMD options : " << endl;
 
@@ -51,12 +52,12 @@ void Processors::PickingOutProcessor()
 				local.final_pc.push_back(elm.second);
 			}
 		}
-
-		local.new_budget = local.budget - local.desired_processor;
-		cout << "Here is your new budget:  " << local.new_budget << endl;
+		
+		local.setNewBudget(local.getBudget(), local.desired_processor);
+		cout << "Here is your new budget:  " << local.getNewBudget() << endl;
 
 	}
-	else if (local.processor_brand == "Intel" || "intel")
+	else if (local.processor_brand == "Intel" || local.processor_brand == "intel")
 	{
 		cout << "Here are your Intel options: " << endl;
 

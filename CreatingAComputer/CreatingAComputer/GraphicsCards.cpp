@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Processors.h"
 #include "LocalVariables.h"
+using namespace std;
 
 void GraphicsCards::findingGPU()
 {
@@ -10,7 +11,7 @@ void GraphicsCards::findingGPU()
 	unordered_map<double, string> EvgaGPU{};
 	LocalVariables local;
 
-
+	
 	AsusAmdGPU = {
 		{378.99, "ASUS RX5700-8GB HDMI PCI Express 4.0 x16 8GB Video"},
 		{300.61, "ASUS ROG Strix Radeon RX 590 8G Gaming GDDR5 DP HDMI DVI VR Ready"},
@@ -32,9 +33,9 @@ void GraphicsCards::findingGPU()
 	};
 
 	cout << "What brand of GPU do you want to use: EVGA & ASUS AMD" << endl;
-	cin >> local.desired_gpu_brand;
+	cin >>local.desired_gpu_brand;
 
-	if (local.desired_gpu_brand == "EVGA" || "evga")
+	if (local.desired_gpu_brand == "EVGA" || local.desired_gpu_brand == "evga")
 	{
 		cout << "Here are your EVGA options: " << endl;
 		
@@ -60,7 +61,7 @@ void GraphicsCards::findingGPU()
 
 		cout << "The amount of money you have left is: " << local.new_budget << endl;
 	}
-	else if (local.desired_gpu_brand == "ASUS AMD" || "asus amd")
+	else if (local.desired_gpu_brand == "ASUS AMD" || local.desired_gpu_brand == "asus amd")
 	{
 
 	}

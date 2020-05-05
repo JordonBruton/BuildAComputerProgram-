@@ -128,6 +128,8 @@
     <ClCompile Include="PowerSupply.cpp" />
     <ClCompile Include="PreExistingBuild.cpp" />
     <ClCompile Include="Processors.cpp" />
+    <ClCompile Include="RAM.cpp" />
+    <ClCompile Include="Tower.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GraphicsCards.h" />
@@ -135,6 +137,8 @@
     <ClInclude Include="PowerSupply.h" />
     <ClInclude Include="PreExistingBuild.h" />
     <ClInclude Include="Processors.h" />
+    <ClInclude Include="RAM.h" />
+    <ClInclude Include="Tower.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

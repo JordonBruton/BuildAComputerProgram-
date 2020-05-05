@@ -8,6 +8,8 @@
 #include "GraphicsCards.h"
 #include "LocalVariables.h"
 #include "PowerSupply.h"
+#include "RAM.h"
+#include "Tower.h"
 
 using namespace std;
 
@@ -58,6 +60,9 @@ int main()
 	Processors processor;
 	LocalVariables local;
 	PowerSupply power;
+	RAM ram;
+	Tower tower;
+	
 	
 	
 
@@ -142,7 +147,6 @@ int main()
 			gpu.findingGPU(local);
 			
 			cout << "Here are the parts you have so far: " << endl;
-			
 			for (int i = 0; i < local.final_pc.size() ; i++)
 			{
 				cout << local.final_pc[i] << endl;
@@ -151,6 +155,29 @@ int main()
 			cout << "Now that you got your GPU, lets pick out your power supply!" << endl;
 			power.findingPowerSupply(local);
 
+			cout << "Here are the parts you have so far: " << endl;
+			for (int i = 0; i < local.final_pc.size(); i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
+
+			cout << "Now that you got your Power Supply, Lets pick out your memory/RAM!" << endl;
+			ram.findingRam(local);
+
+			cout << "Here are the parts you have so far: " << endl;
+			for (int i = 0; i < local.final_pc.size(); i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
+
+			cout << "Now that you got your Ram, lets pick out your Tower!" << endl;
+			tower.findingTower(local);
+
+			cout << "Here are the parts you have so far: " << endl;
+			for (int i = 0; i < local.final_pc.size(); i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
 
 		}
 	}

@@ -30,6 +30,12 @@
     <ClCompile Include="PowerSupply.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RAM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PreExistingBuild.h">
@@ -45,6 +51,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PowerSupply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RAM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tower.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

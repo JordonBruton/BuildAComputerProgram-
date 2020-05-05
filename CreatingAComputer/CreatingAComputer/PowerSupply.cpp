@@ -84,4 +84,6 @@ void PowerSupply::findingPowerSupply(LocalVariables& originalLocal)
 		cout << "Power supply brand does not exist in this program" << endl;
 	}
 
+	originalLocal = local;
+
 };

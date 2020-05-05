@@ -16,6 +16,10 @@ public:
 	vector<string> final_pc{};
 	string desired_ps_brand;
 	double desired_ps;
+	string desired_ram_brand;
+	double desired_ram;
+	string desired_tower_brand;
+	double desired_tower;
 
 public:
 	void setBudget(double& x)

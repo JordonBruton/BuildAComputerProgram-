@@ -1,4 +1,7 @@
 ﻿  main.cpp
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(136,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(146,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(141,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(150,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(159,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(168,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(177,22): warning C4018: '<': signed/unsigned mismatch
   CreatingAComputer.vcxproj -> C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\Debug\CreatingAComputer.exe

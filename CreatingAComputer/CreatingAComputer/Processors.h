@@ -11,7 +11,7 @@ class Processors
 {
 public:
 
-	void PickingOutProcessor();
+	void PickingOutProcessor(LocalVariables& originalLocal);
 
 };
 

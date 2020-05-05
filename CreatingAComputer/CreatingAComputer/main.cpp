@@ -7,6 +7,7 @@
 #include "Processors.h"
 #include "GraphicsCards.h"
 #include "LocalVariables.h"
+#include "PowerSupply.h"
 
 using namespace std;
 
@@ -28,7 +29,7 @@ using namespace std;
 
 // 5/4/2020 
 	// To Do List:
-		// Create GPU & Power supply options 
+		// Create GPU & Power supply options DONE
 	// Issues: 
 		// Can't figure out how to make local variable extend its data to other parts of the program
 		// Why my some of my conditonal statements not being considered
@@ -56,6 +57,8 @@ int main()
 	GraphicsCards gpu;
 	Processors processor;
 	LocalVariables local;
+	PowerSupply power;
+	
 	
 
 	cout << "Welcome to the PC Creation Program!" << endl;
@@ -127,7 +130,7 @@ int main()
 			
 			cout << "Lets start your build!" << endl;
 			
-			processor.PickingOutProcessor();
+			processor.PickingOutProcessor(local);
 
 			cout << "Here are the parts you have so far: " << endl;
 			for (int i = 0; i < local.final_pc.size(); i++)
@@ -136,8 +139,7 @@ int main()
 			}
 
 			cout << "Now that you got your processor, Lets pick out your GPU!" << endl;
-			
-			gpu.findingGPU();
+			gpu.findingGPU(local);
 			
 			cout << "Here are the parts you have so far: " << endl;
 			
@@ -146,6 +148,10 @@ int main()
 				cout << local.final_pc[i] << endl;
 			}
 			
+			cout << "Now that you got your GPU, lets pick out your power supply!" << endl;
+			power.findingPowerSupply(local);
+
+
 		}
 	}
 	

@@ -5,12 +5,13 @@
 #include "LocalVariables.h"
 using namespace std;
 
-void GraphicsCards::findingGPU()
+void GraphicsCards::findingGPU(LocalVariables& originalLocal)
 {
 	unordered_map<double, string> AsusAmdGPU{};
 	unordered_map<double, string> EvgaGPU{};
 	LocalVariables local;
 
+	local = originalLocal;
 	
 	AsusAmdGPU = {
 		{378.99, "ASUS RX5700-8GB HDMI PCI Express 4.0 x16 8GB Video"},
@@ -39,6 +40,31 @@ void GraphicsCards::findingGPU()
 	{
 		cout << "Here are your EVGA options: " << endl;
 		
+		for (auto& elm : EvgaGPU)
+		{
+			cout << "$" << elm.first << " " << elm.second << endl;
+		}
+
+		cout << "To get your desired GPU enter the amount it cost" << endl;
+		cin >> local.desired_gpu;
+
+		for (auto& elm : EvgaGPU)
+		{
+			if (elm.first == local.desired_gpu)
+			{
+				cout << "The GPU you picked out is: " << elm.second << endl;
+
+				local.final_pc.push_back(elm.second);
+			}
+		}
+
+		local.setNewBudget(local.getNewBudget(), local.desired_gpu);
+		cout << "Here is your new budget:  " << local.getNewBudget() << endl;
+	}
+	else if (local.desired_gpu_brand == "ASUS AMD" || local.desired_gpu_brand == "asus amd")
+	{
+		cout << "Here are your ASUS options: " << endl;
+
 		for (auto& elm : AsusAmdGPU)
 		{
 			cout << "$" << elm.first << " " << elm.second << endl;
@@ -57,16 +83,14 @@ void GraphicsCards::findingGPU()
 			}
 		}
 
-		local.new_budget = local.budget - local.desired_gpu;
-
-		cout << "The amount of money you have left is: " << local.new_budget << endl;
-	}
-	else if (local.desired_gpu_brand == "ASUS AMD" || local.desired_gpu_brand == "asus amd")
-	{
+		local.setNewBudget(local.getNewBudget(), local.desired_gpu);
+		cout << "Here is your new budget:  " << local.getNewBudget() << endl;
 
 	}
 	else
 	{
-
+		cout << "The brand you listed doesn't exist in this program!" << endl;
 	}
+
+	originalLocal = local;
 }

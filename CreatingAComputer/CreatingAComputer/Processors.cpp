@@ -4,15 +4,13 @@
 #include "LocalVariables.h"
 using namespace std;
 
-void Processors::PickingOutProcessor()
+void Processors::PickingOutProcessor(LocalVariables& originalLocal)
 {
 	unordered_map<double, string> amd_processor{};
 	unordered_map<double, string> intel_processor{};
 	LocalVariables local;
-	Processors::PickingOutProcessor(double& local.budget)
-	{
-
-	}
+	
+	local = originalLocal;
 
 	amd_processor = {
 		{432.41, "AMD Ryzen 9 3900x"},
@@ -83,14 +81,14 @@ void Processors::PickingOutProcessor()
 			}
 		}
 
-		local.new_budget = local.budget - local.desired_processor;
-		cout << "Here is your new budget:  " << local.new_budget << endl;
+		local.setNewBudget(local.getBudget(), local.desired_processor);
+		cout << "Here is your new budget:  " << local.getNewBudget() << endl;
 	}
 	else
 	{
 		cout << "Brand not available!" << endl;
 	}
 
-	
+	originalLocal = local;
 }
 

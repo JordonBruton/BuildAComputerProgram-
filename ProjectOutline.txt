@@ -27,8 +27,7 @@ Parts You Need To Build a Computer:
 	- Tower (deskstop case)
 	- MotherBoard
 	- SSD (opitonal(faster))
-	- Hard drive(???)
-	- More fans (optioanl(not required)) 
+	- Hard Drive(??)
 
 Idea:
 	- Using the numbers 1-3 to distinguish the different price ranges (i.e 1 being the cheapest and 3 being the most expensive)

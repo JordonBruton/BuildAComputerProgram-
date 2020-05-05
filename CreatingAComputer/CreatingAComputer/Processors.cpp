@@ -9,7 +9,10 @@ void Processors::PickingOutProcessor()
 	unordered_map<double, string> amd_processor{};
 	unordered_map<double, string> intel_processor{};
 	LocalVariables local;
-	
+	Processors::PickingOutProcessor(double& local.budget)
+	{
+
+	}
 
 	amd_processor = {
 		{432.41, "AMD Ryzen 9 3900x"},
@@ -31,7 +34,7 @@ void Processors::PickingOutProcessor()
 
 	cout << "Pick out a processor brand: Intel, AMD" << endl;
 	cin >> local.processor_brand;
-	cout << local.getBudget() << endl;
+
 	
 	if (local.processor_brand == "AMD" || local.processor_brand == "amd")
 	{

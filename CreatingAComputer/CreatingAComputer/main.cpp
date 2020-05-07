@@ -3,6 +3,7 @@
 #include <cmath>
 #include <vector>
 #include <unordered_map>
+#include <fstream>
 #include "PreExistingBuild.h"
 #include "Processors.h"
 #include "GraphicsCards.h"
@@ -12,6 +13,7 @@
 #include "Tower.h"
 #include "MotherBoard.h"
 #include "SolidStateDrive.h"
+
 using namespace std;
 
 // 4/28/2020 - 4/29/2020
@@ -43,7 +45,7 @@ using namespace std;
 
 // 5/6/2020
 	// To Do List:
-		// Mother Board & SSD
+		// Mother Board & SSD DONE
 
 // 5/7/2020
 	// To Do List:
@@ -65,6 +67,7 @@ int main()
 	Tower tower;
 	MotherBoard mobo;
 	SolidStateDrive ssd;
+	ofstream fout;
 
 
 	cout << "Welcome to the PC Creation Program!" << endl;
@@ -154,8 +157,10 @@ int main()
 			{
 				cout << local.final_pc[i] << endl;
 			}
+
+			cout << endl;
 			
-			cout << "Now that you got your GPU, lets pick out your power supply!" << endl;
+			cout << "Now that you got your GPU, lets pick out your Power Supply!" << endl;
 			power.findingPowerSupply(local);
 
 			cout << "Here are the parts you have so far: " << endl;
@@ -166,7 +171,7 @@ int main()
 
 			cout << endl;
 
-			cout << "Now that you got your Power Supply, Lets pick out your memory/RAM!" << endl;
+			cout << "Now that you got your Power Supply, Lets pick out your Memory/Ram!" << endl;
 			ram.findingRam(local);
 
 			cout << "Here are the parts you have so far: " << endl;
@@ -177,18 +182,7 @@ int main()
 
 			cout << endl;
 
-			cout << "Now that you got your Ram, lets pick out your Tower!" << endl;
-			tower.findingTower(local);
-
-			cout << "Here are the parts you have so far: " << endl;
-			for (int i = 0; i < local.final_pc.size(); i++)
-			{
-				cout << local.final_pc[i] << endl;
-			}
-
-			cout << endl;
-
-			cout << "Now that you got your Tower, Lets pick out your Mother Board!" << endl;
+			cout << "Now that you got your Ram, Lets pick out your Mother Board!" << endl;
 			mobo.findingMotherBoard(local);
 
 			cout << "Here are the parts you have so far: " << endl;
@@ -199,16 +193,56 @@ int main()
 
 			cout << endl;
 
-			cout << "Now that you got your MotherBoard, Lets pick out your SSD card!" << endl;
+			cout << "Now that you got your MotherBoard, Lets pick out your SSD Card!" << endl;
 			ssd.findingSolidStateDrive(local);
+			
+			cout << "Here are the parts you have so far: " << endl;
+			for (int i = 0; i < local.final_pc.size(); i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
+
+			cout << endl;
+
+			cout << "Now that you got your SSD Card, lets get our last part which is the Tower!" << endl;
+			tower.findingTower(local);
+
+			cout << endl;
 
 			cout << "Here is your final build!" << endl;
 			for (int i = 0; i < local.final_pc.size(); i++)
 			{
 				cout << local.final_pc[i] << endl;
 			}
+			cout << "Here is your ending budget: " << local.getNewBudget() << endl;
 
-			return 0;
+			cout << "Do you want to create a file of this information?" << endl;
+			string file_answer;
+			cin >> file_answer;
+			if (file_answer == "yes" || file_answer == "y")
+			{
+				cout << "Enter what you want the file name to be: " << endl;
+				string desired_file_name;
+				cin >> desired_file_name;
+				fout.open(desired_file_name);
+
+				for (int i = 0; i < local.final_pc.size(); i++)
+				{
+					fout << local.final_pc[i] << endl;
+				}
+
+				cout << endl;
+
+				fout << "Here is your ending budget: " << local.getNewBudget() << endl;
+
+				return 0;
+			}
+			else
+			{
+				return 0;
+			}
+
+
 		}
 	}
 	

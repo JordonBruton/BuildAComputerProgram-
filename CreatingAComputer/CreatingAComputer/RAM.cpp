@@ -17,8 +17,9 @@ void RAM::findingRam(LocalVariables& orignialLocal)
 		{72.99, "CORSAIR ValueSelect 16GB 288-Pin DDR4 SDRAM DDR4 2133 x 1"},
 		{74.99, "CORSAIR Vengeance LPX 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200"},
 		{92.99, "CORSAIR Vengeance RGB Pro 16GB (2 x 8GB) 288-Pin DDR4 DRAM 3200"},
-		{174.99, "CORSAIR Vengenace RGB Pro 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200"},
-		{159.99, "CORSAIR Vengeance LPX 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200"}
+		{159.99, "CORSAIR Vengeance LPX 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200"},
+		{174.99, "CORSAIR Vengenace RGB Pro 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200"}
+		
 	};
 	g_skill = {
 		{32.99, "G.SKILL Aegis 8GB 288-Pin DDR4 SDRAM 3000 x 1"},
@@ -31,6 +32,8 @@ void RAM::findingRam(LocalVariables& orignialLocal)
 
 	cout << "What Ram brand do you want to use: Corsair or G.skill " << endl;
 	cin >> local.desired_ram_brand;
+
+	cout << endl;
 
 	if (local.desired_ram_brand == "Corsair" || local.desired_ram_brand == "corsair")
 	{

@@ -33,6 +33,7 @@ void SolidStateDrive::findingSolidStateDrive(LocalVariables& originalLocal)
 	cout << "Pick out a processor brand: Intel or Samsung" << endl;
 	cin >> local.desired_ssd_brand;
 
+	cout << endl;
 
 	if (local.desired_ssd_brand == "Intel" || local.desired_ssd_brand == "intel")
 	{
@@ -43,7 +44,7 @@ void SolidStateDrive::findingSolidStateDrive(LocalVariables& originalLocal)
 			cout << "$" << elm.first << " " << elm.second << endl;
 		}
 
-		cout << "Enter the amount of the desired processor" << endl;
+		cout << "To get the desired SSD enter the amount it cost" << endl;
 		cin >> local.desired_ssd;
 		for (auto& elm : intel)
 		{
@@ -68,8 +69,7 @@ void SolidStateDrive::findingSolidStateDrive(LocalVariables& originalLocal)
 			cout << "$" << elm.first << " " << elm.second << endl;
 		}
 
-		cout << "What proccesor do you want?" << endl;
-		cout << "	Enter the amount of the desired processor" << endl;
+		cout << "To get the desired SSD enter the amount it cost" << endl;
 		cin >> local.desired_ssd;
 		for (auto& elm : samsung)
 		{

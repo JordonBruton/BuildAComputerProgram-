@@ -15,8 +15,8 @@ void PowerSupply::findingPowerSupply(LocalVariables& originalLocal)
 	power_evga = {
 		{64.99, "EVGA 750 N1, 750W, Power Supply"},
 		{129.99, "EVGA 850 B5, 80 Plus BRONZE 850W, Fully Modular"},
-		{289.99, "EVGA SuperNOVA 1300 G2, 80+ GOLD 1300W, Fully Modular"},
 		{229.99, "EVGA SuperNOVA 1000 G2, 80+ GOLD 1000W, Fully Modular"},
+		{289.99, "EVGA SuperNOVA 1300 G2, 80+ GOLD 1300W, Fully Modular"},
 		{319.99, "EVGA SuperNOVA 1200 P2, 80+ PLATINUM 1200W, Fully Modular"},
 		{469.99, "EVGA SuperNOVA 1600 P2, 80+ PLATINUM 1600W, Fully Modular"}
 	};
@@ -32,6 +32,8 @@ void PowerSupply::findingPowerSupply(LocalVariables& originalLocal)
 
 	cout << "What Power Supply brand do you want to use: EVGA or Corsair: " << endl;
 	cin >> local.desired_ps_brand;
+
+	cout << endl;
 
 	if (local.desired_ps_brand == "EVGA" || local.desired_ps_brand == "evga")
 	{

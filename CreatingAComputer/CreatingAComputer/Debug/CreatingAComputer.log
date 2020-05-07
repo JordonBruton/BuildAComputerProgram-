@@ -1,18 +1,2 @@
-﻿  GraphicsCards.cpp
-  main.cpp
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(142,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(151,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(160,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(169,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(178,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(187,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\CreatingAComputer\main.cpp(196,22): warning C4018: '<': signed/unsigned mismatch
-  MotherBoard.cpp
-  PowerSupply.cpp
-  Processors.cpp
-  RAM.cpp
-  SolidStateDrive.cpp
-  Tower.cpp
-  Generating Code...
-PreExistingBuild.obj : warning LNK4099: PDB 'vc142.pdb' was not found with 'PreExistingBuild.obj' or at 'C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\Debug\vc142.pdb'; linking object as if no debug info
+﻿  MotherBoard.cpp
   CreatingAComputer.vcxproj -> C:\Users\jrb123\Desktop\BuildAComputerProgram-\CreatingAComputer\Debug\CreatingAComputer.exe

@@ -13,9 +13,9 @@ void MotherBoard::findingMotherBoard(LocalVariables& originalLocal)
 	local = originalLocal;
 
 	asus_rog = {
-		{289.99, "ASUS ROG Maximums XI Hero (Wifi) Z390 Gaming Motherboard"},
-		{189.99, "ASUS ROG Strix Z390-H Gaming MotherBoard LGA1151 ATX DDR4 DP HDMI M.2 USB 3.1 Gen2 Gigabit LAN"},
 		{154.99, "ASUS ROG STRIX B450-F Gaming AM$ AMD B450 SATA 6Gb/'s ATX AMD Motherboard"},
+		{189.99, "ASUS ROG Strix Z390-H Gaming MotherBoard LGA1151 ATX DDR4 DP HDMI M.2 USB 3.1 Gen2 Gigabit LAN"},
+		{289.99, "ASUS ROG Maximums XI Hero (Wifi) Z390 Gaming Motherboard"},
 		{499.99, "ASUS ROG Strix X299-E Gaming II LGA 2066 Intel X299 SATA 6Gb/s ATX Intel Motherboard"}
 	};
 
@@ -29,15 +29,17 @@ void MotherBoard::findingMotherBoard(LocalVariables& originalLocal)
 	cout << "What Motherboard brand do you want to use: Asus Rog or Gigabyte" << endl;
 	cin >> local.desired_mobo_brand;
 
-	if (local.desired_mobo_brand == "AsusRog" || local.desired_mobo_brand == "asusrog")
+	cout << endl;
+
+	if (local.desired_mobo_brand == "Rog" || local.desired_mobo_brand == "rog")
 	{
-		cout << "Here are your Asus Rog options: " << endl;
+		cout << "Here are your Rog options: " << endl;
 		for (auto& elm : asus_rog)
 		{
 			cout << "$" << elm.first << " " << elm.second << endl;
 		}
 
-		cout << "To get the desired Tower enter the amount it cost" << endl;
+		cout << "To get the desired Motherboard enter the amount it cost" << endl;
 		cin >> local.desired_mobo;
 		for (auto& elm : asus_rog)
 		{
@@ -60,7 +62,7 @@ void MotherBoard::findingMotherBoard(LocalVariables& originalLocal)
 			cout << "$" << elm.first << " " << elm.second << endl;
 		}
 
-		cout << "To get the desired Tower enter the amount it cost" << endl;
+		cout << "To get the desired Motherboard enter the amount it cost" << endl;
 		cin >> local.desired_mobo;
 		for (auto& elm : gigabyte)
 		{

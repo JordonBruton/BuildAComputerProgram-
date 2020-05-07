@@ -28,12 +28,14 @@ void Tower::findingTower(LocalVariables& originalLocal)
 		{176.06, "CORSAIR Carbide Series RGB Tempered Glass Mid-Tower ATX"}
 	};
 
-	cout << "What Tower brand do you want to use: Cool Master or Corsair" << endl;
+	cout << "What Tower brand do you want to use: Master or Corsair" << endl;
 	cin >> local.desired_tower_brand;
 
-	if (local.desired_tower_brand == "CoolMaster" || local.desired_tower_brand == "coolmaster")
+	cout << endl;
+
+	if (local.desired_tower_brand == "Master" || local.desired_tower_brand == "master")
 	{
-		cout << "Here are your Cool Master options: " << endl;
+		cout << "Here are your Master options: " << endl;
 		for (auto& elm : cool_master)
 		{
 			cout << "$" << elm.first << " " << elm.second << endl;

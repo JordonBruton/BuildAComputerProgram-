@@ -125,19 +125,23 @@
   <ItemGroup>
     <ClCompile Include="GraphicsCards.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MotherBoard.cpp" />
     <ClCompile Include="PowerSupply.cpp" />
     <ClCompile Include="PreExistingBuild.cpp" />
     <ClCompile Include="Processors.cpp" />
     <ClCompile Include="RAM.cpp" />
+    <ClCompile Include="SolidStateDrive.cpp" />
     <ClCompile Include="Tower.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GraphicsCards.h" />
     <ClInclude Include="LocalVariables.h" />
+    <ClInclude Include="MotherBoard.h" />
     <ClInclude Include="PowerSupply.h" />
     <ClInclude Include="PreExistingBuild.h" />
     <ClInclude Include="Processors.h" />
     <ClInclude Include="RAM.h" />
+    <ClInclude Include="SolidStateDrive.h" />
     <ClInclude Include="Tower.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

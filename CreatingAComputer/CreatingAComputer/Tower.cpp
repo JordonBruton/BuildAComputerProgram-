@@ -31,7 +31,7 @@ void Tower::findingTower(LocalVariables& originalLocal)
 	cout << "What Tower brand do you want to use: Cool Master or Corsair" << endl;
 	cin >> local.desired_tower_brand;
 
-	if (local.desired_tower_brand == "Cool Master" || local.desired_tower_brand == "cool master")
+	if (local.desired_tower_brand == "CoolMaster" || local.desired_tower_brand == "coolmaster")
 	{
 		cout << "Here are your Cool Master options: " << endl;
 		for (auto& elm : cool_master)
@@ -52,7 +52,7 @@ void Tower::findingTower(LocalVariables& originalLocal)
 		}
 
 		local.setNewBudget(local.getNewBudget(), local.desired_tower);
-		cout << "Here is yoru new budget: " << local.getNewBudget() << endl;
+		cout << "Here is your new budget: " << local.getNewBudget() << endl;
 	}
 	else if (local.desired_tower_brand == "Corsair" || local.desired_tower_brand == "corsair")
 	{

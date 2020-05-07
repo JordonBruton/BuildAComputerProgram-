@@ -10,7 +10,8 @@
 #include "PowerSupply.h"
 #include "RAM.h"
 #include "Tower.h"
-
+#include "MotherBoard.h"
+#include "SolidStateDrive.h"
 using namespace std;
 
 // 4/28/2020 - 4/29/2020
@@ -62,9 +63,9 @@ int main()
 	PowerSupply power;
 	RAM ram;
 	Tower tower;
-	
-	
-	
+	MotherBoard mobo;
+	SolidStateDrive ssd;
+
 
 	cout << "Welcome to the PC Creation Program!" << endl;
 	cout << endl;
@@ -143,6 +144,8 @@ int main()
 				cout << local.final_pc[i] << endl;
 			}
 
+			cout << endl;
+
 			cout << "Now that you got your processor, Lets pick out your GPU!" << endl;
 			gpu.findingGPU(local);
 			
@@ -161,6 +164,8 @@ int main()
 				cout << local.final_pc[i] << endl;
 			}
 
+			cout << endl;
+
 			cout << "Now that you got your Power Supply, Lets pick out your memory/RAM!" << endl;
 			ram.findingRam(local);
 
@@ -169,6 +174,8 @@ int main()
 			{
 				cout << local.final_pc[i] << endl;
 			}
+
+			cout << endl;
 
 			cout << "Now that you got your Ram, lets pick out your Tower!" << endl;
 			tower.findingTower(local);
@@ -179,6 +186,29 @@ int main()
 				cout << local.final_pc[i] << endl;
 			}
 
+			cout << endl;
+
+			cout << "Now that you got your Tower, Lets pick out your Mother Board!" << endl;
+			mobo.findingMotherBoard(local);
+
+			cout << "Here are the parts you have so far: " << endl;
+			for (int i = 0; i < local.final_pc.size(); i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
+
+			cout << endl;
+
+			cout << "Now that you got your MotherBoard, Lets pick out your SSD card!" << endl;
+			ssd.findingSolidStateDrive(local);
+
+			cout << "Here is your final build!" << endl;
+			for (int i = 0; i < local.final_pc.size(); i++)
+			{
+				cout << local.final_pc[i] << endl;
+			}
+
+			return 0;
 		}
 	}
 	

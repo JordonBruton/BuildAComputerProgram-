@@ -18,7 +18,7 @@ void Processors::PickingOutProcessor(LocalVariables& originalLocal)
 		{298.99, "AMD Ryzen 7 3700x"},
 		{204.99, "AMD Ryzen 5 3600x"},
 		{172.76, "AMD Ryzen 5 3600"},
-		{94.99, "AMD Ryzen 3200G"},
+		{94.99, "AMD Ryzen 3200G"}
 	};
 
 	intel_processor = {

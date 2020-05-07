@@ -20,6 +20,10 @@ public:
 	double desired_ram;
 	string desired_tower_brand;
 	double desired_tower;
+	string desired_mobo_brand;
+	double desired_mobo;
+	string desired_ssd_brand;
+	double desired_ssd;
 
 public:
 	void setBudget(double& x)

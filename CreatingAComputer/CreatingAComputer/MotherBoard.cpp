@@ -26,7 +26,7 @@ void MotherBoard::findingMotherBoard(LocalVariables& originalLocal)
 		{325.44, "GIGABYTE Z390 DESIGNARE LGA 1151 (300 Series) Inel Z390 HDMI SATA 6Gb/s USB 3.1 ATX Intel Motherboard"}
 	};
 
-	cout << "What Motherboard brand do you want to use: Asus Rog or Gigabyte" << endl;
+	cout << "What Motherboard brand do you want to use: Rog or Gigabyte" << endl;
 	cin >> local.desired_mobo_brand;
 
 	cout << endl;

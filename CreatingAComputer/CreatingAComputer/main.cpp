@@ -15,43 +15,7 @@
 #include "SolidStateDrive.h"
 
 using namespace std;
-
-// 4/28/2020 - 4/29/2020
-	// To Do List:
-		// Prompting users what their options are DONE
-			// Already existing build DONE
-			// Create your own pc DONE
-		// Create basic builds with different price ranges DONE
-
-// 4/30/20
-	// To Do List:
-		// Organize Classes into seperate file to make code cleaner DONE
-		// Creating data strucutres for:
-			// CPU DONE
-// remember case:
-	// can't have two of the smae prices
-// Binary search tree(???)
-
-// 5/4/2020 
-	// To Do List:
-		// Create GPU & Power supply options DONE
-	// Issues: 
-		// Can't figure out how to make local variable extend its data to other parts of the program
-		// Why my some of my conditonal statements not being considered
-
-// 5/5/2020
-	// To Do List:	
-		// RAM & Tower DONE
-
-// 5/6/2020
-	// To Do List:
-		// Mother Board & SSD DONE
-
-// 5/7/2020
-	// To Do List:
-		// Hard Drive (If I have time)
 		
-
 int main()
 {
 	// Local variables 
@@ -215,6 +179,8 @@ int main()
 				cout << local.final_pc[i] << endl;
 			}
 			cout << "Here is your ending budget: " << local.getNewBudget() << endl;
+
+			cout << endl;
 
 			cout << "Do you want to create a file of this information?" << endl;
 			string file_answer;

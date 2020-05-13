@@ -6,21 +6,31 @@
 		- Create basic builds with different price ranges DONE
 # 4/30/20
 	// To Do List:
-		- Organize Classes into seperate file to make code cleaner DONE
-		- Creating data strucutres for:
+		- Organize Classes into separate file to make code cleaner DONE
+		- Creating data structures for:
 			- CPU DONE
 # 5/4/2020 
 	// To Do List:
 		- Create GPU & Power supply options DONE
 	// Issues: 
 		- Can't figure out how to make local variable extend its data to other parts of the program
-		- Why my some of my conditonal statements not being considered
+		- Why my some of my conditional statements not being considered
 # 5/5/2020
 	// To Do List:	
 		- RAM & Tower DONE
 # 5/6/2020
 	// To Do List:
-		- Mother Board & SSD DONE
+		- Motherboard & SSD DONE
 # 5/7/2020
 	 // To Do List:
 		- Hard Drive (If I have time)
+summary:
+	Our final milestone gave us a lot of freedom, which made me really enjoy the whole process of creating the project. This project by far was not only my best, but one that I enjoyed creating 
+	most. I learned so much while doing this project such as the implementation of classes within a project, and the use of references. This are all things that I have struggled with,
+	but since I had to use them it forced me to learn how to actually implement them in my code. Some of the differences I noticed while doing this project in compared to others was 
+	the excitement to actually do the project. To me it didn't seem like a homework assignment that needed to be graded, but a project that I wanted to do. For future advice for this assignment
+	I say keep it the same, because it is really exciting to do, and create something that truly is yours. Also I just wanted to thank you for being such a good professor. I appreciate 
+	the difficulty and the way you run the class.
+
+
+
